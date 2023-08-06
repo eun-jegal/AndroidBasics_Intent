@@ -26,7 +26,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             btnLaunchYoutube.setOnClickListener {
-                val intent = Intent(Intent.ACTION_MAIN).also {
+                Intent(Intent.ACTION_MAIN).also {
                     it.`package` = "com.google.android.youtube"
                     try {
                         startActivity(it)
